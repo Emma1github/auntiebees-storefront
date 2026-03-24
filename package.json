@@ -1,0 +1,12 @@
+{
+  "name": "ecormerce",
+  "version": "1.0.0",
+  "description": "Auntie Bee's Boutique storefront",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "node --check index.js"
+  },
+  "private": true
+}

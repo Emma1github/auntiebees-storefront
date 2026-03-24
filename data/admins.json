@@ -1,0 +1,11 @@
+[
+  {
+    "id": "ADM-DEFAULT-01",
+    "username": "admin",
+    "displayName": "Auntie Bee Admin",
+    "passwordSalt": "ab_admin_salt_v1",
+    "passwordHash": "d77f0cb67245f8a05e6cdf9985af4b53ca5825fc25406042da4e7ef37df559a99977035fe1c37b4ec7606ed96757035e74922656781a5d9c72e2d315402a7b94",
+    "createdAt": "2026-03-24T10:30:00.000Z",
+    "updatedAt": "2026-03-24T10:30:00.000Z"
+  }
+]

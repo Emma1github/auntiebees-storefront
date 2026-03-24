@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Auntie Bee's Boutique offers premium menswear, sneakers, slippers, sprays, and grooming essentials from Hiawa in Ghana's Western Region."
+    />
+    <title>Auntie Bee's Boutique | Menswear, Sneakers & Grooming</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-backdrop" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Auntie Bee's Boutique home">
+          <span class="brand-mark">AB</span>
+          <span class="brand-copy">
+            <strong>Auntie Bee's</strong>
+            <small>Boutique</small>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav">
+          <a href="#collections">Collections</a>
+          <a href="#checkout">Checkout</a>
+          <a href="#location">Location</a>
+          <a href="#contact" class="nav-cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Menswear / Sneakers / Grooming</p>
+            <h1>Dress the modern gentleman with confidence.</h1>
+            <p class="hero-text">
+              Auntie Bee's Boutique brings together casual wear, official outfits,
+              statement shoes, slippers, sprays, deodorants, and premium sneakers
+              for men who want to show up sharp every day.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#collections">Browse Collections</a>
+              <a class="button ghost" href="#checkout">Place an Order</a>
+            </div>
+            <ul class="hero-points">
+              <li>Curated looks for work, church, weddings, and weekends.</li>
+              <li>Live stock-backed catalog with order capture and payment tracking.</li>
+              <li>Based in Hiawa, off the Asankragua Road in Ghana's Western Region.</li>
+            </ul>
+          </div>
+
+          <div class="hero-showcase" data-reveal>
+            <div class="showcase-card showcase-card--feature">
+              <span class="showcase-tag">Now Taking Orders</span>
+              <h2>Inventory, checkout, and payment follow-up in one boutique system.</h2>
+              <p>
+                Customers can add items to bag, place orders online, and staff can
+                monitor stock levels, order progress, and payment status from one dashboard.
+              </p>
+            </div>
+            <div class="showcase-grid">
+              <article class="showcase-card showcase-card--small tone-earth">
+                <span class="showcase-label">Inventory</span>
+                <strong>Add new items without touching the storefront layout</strong>
+              </article>
+              <article class="showcase-card showcase-card--small tone-olive">
+                <span class="showcase-label">Orders</span>
+                <strong>Receive customer orders with references and delivery details</strong>
+              </article>
+              <article class="showcase-card showcase-card--small tone-copper">
+                <span class="showcase-label">Payments</span>
+                <strong>Track pending, confirmed, and paid orders clearly</strong>
+              </article>
+            </div>
+            <div class="floating-pill">Built to convert online interest into managed sales</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics">
+        <div class="container metrics-grid">
+          <article data-reveal>
+            <strong>Live</strong>
+            <span>Products now load from inventory data instead of hardcoded cards.</span>
+          </article>
+          <article data-reveal>
+            <strong>Orders</strong>
+            <span>Customers can submit an actual order with item quantities and address.</span>
+          </article>
+          <article data-reveal>
+            <strong>Payments</strong>
+            <span>Each order carries a payment method and a payment status for follow-up.</span>
+          </article>
+          <article data-reveal>
+            <strong>Admin</strong>
+            <span>Staff can add products and update order or payment progress from a dashboard.</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="collections" class="section">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Shop by Department</p>
+            <h2>Browse live products from the boutique inventory.</h2>
+            <p>
+              The catalog below is now driven by product data. As new arrivals are added in the
+              admin dashboard, they appear here automatically for customers to order.
+            </p>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card" data-reveal>
+              <span class="category-icon">01</span>
+              <h3>Casual Wear</h3>
+              <p>Polos, tees, denim, coordinated sets, and easy looks for everyday style.</p>
+            </article>
+            <article class="category-card" data-reveal>
+              <span class="category-icon">02</span>
+              <h3>Official Clothing</h3>
+              <p>Dress shirts, tailored trousers, jackets, belts, and polished accessories.</p>
+            </article>
+            <article class="category-card" data-reveal>
+              <span class="category-icon">03</span>
+              <h3>Sneakers & Footwear</h3>
+              <p>Premium sneakers, loafers, slippers, and fashion-forward shoes for men.</p>
+            </article>
+            <article class="category-card" data-reveal>
+              <span class="category-icon">04</span>
+              <h3>Grooming Essentials</h3>
+              <p>Sprays, deodorants, and finishing products that round out the purchase.</p>
+            </article>
+          </div>
+
+          <div class="collection-shell">
+            <div class="collection-browser" data-reveal>
+              <div class="collection-toolbar">
+                <div>
+                  <p class="eyebrow">Featured Product Mix</p>
+                  <h3>Filter the catalog like a shopper would.</h3>
+                </div>
+                <div class="filter-group" id="filter-group" aria-label="Product filters"></div>
+              </div>
+              <div class="product-grid" id="product-grid"></div>
+            </div>
+
+            <aside class="enquiry-panel" data-reveal>
+              <p class="eyebrow">Shopping Bag</p>
+              <h3>Review items before checkout.</h3>
+              <p>
+                Customers can build a bag, adjust quantities, then continue to checkout or
+                send the same selection as a quick stock enquiry.
+              </p>
+              <ul class="enquiry-list" id="cart-list">
+                <li class="empty-state">No items added yet.</li>
+              </ul>
+              <div class="enquiry-summary">
+                <span><strong id="cart-count">0</strong> units</span>
+                <strong id="cart-total">GHS 0</strong>
+              </div>
+              <div class="stacked-actions">
+                <button class="button secondary wide" id="go-to-checkout" type="button">
+                  Continue to checkout
+                </button>
+                <button class="button ghost wide" id="send-cart-enquiry" type="button">
+                  Ask about selected items
+                </button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="checkout" class="section checkout-section">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Checkout</p>
+            <h2>Receive customer orders with payment tracking from day one.</h2>
+            <p>
+              Customers can now pay through Paystack with card, bank, or mobile money.
+              Manual mobile money and bank transfer are still available when you want boutique-side confirmation.
+            </p>
+          </div>
+
+          <div class="checkout-layout">
+            <div class="contact-copy" data-reveal>
+              <p class="eyebrow">Ordering Flow</p>
+              <h2>Simple enough for launch, structured enough to scale.</h2>
+              <div class="contact-points">
+                <article>
+                  <strong>1. Add to bag</strong>
+                  <span>Customers choose items and quantities directly from the catalog.</span>
+                </article>
+                <article>
+                  <strong>2. Place order</strong>
+                  <span>They submit contact details, address, and a secure or manual payment method.</span>
+                </article>
+                <article>
+                  <strong>3. Monitor payment</strong>
+                  <span>Paystack payments verify automatically, while manual payments can still be confirmed in admin.</span>
+                </article>
+              </div>
+            </div>
+
+            <div class="checkout-stack">
+              <div class="order-summary-card" data-reveal>
+                <p class="eyebrow">Order Summary</p>
+                <div id="checkout-summary" class="checkout-summary">
+                  <p class="empty-state">Your bag is empty.</p>
+                </div>
+              </div>
+
+              <form class="contact-form" id="order-form" novalidate data-reveal>
+                <div class="field-row">
+                  <label>
+                    Full name
+                    <input type="text" name="name" placeholder="Customer name" required />
+                  </label>
+                  <label>
+                    Phone number
+                    <input type="tel" name="phone" placeholder="+233..." required />
+                  </label>
+                </div>
+
+                <div class="field-row">
+                  <label>
+                    Email address
+                    <input type="email" name="email" placeholder="you@example.com" />
+                  </label>
+                  <label>
+                    Payment method
+                    <select name="paymentMethod" required>
+                      <option value="Paystack - Mobile Money">Paystack - Mobile Money</option>
+                      <option value="Paystack - Card/Bank">Paystack - Card/Bank</option>
+                      <option value="Mobile money">Mobile money</option>
+                      <option value="Bank transfer">Bank transfer</option>
+                      <option value="Pay on delivery">Pay on delivery</option>
+                      <option value="Pay in store">Pay in store</option>
+                    </select>
+                  </label>
+                </div>
+
+                <p class="payment-note">
+                  Paystack methods redirect to a secure checkout page and return here after payment.
+                  SMS updates can be sent to the customer and the boutique when your server credentials are configured.
+                </p>
+
+                <label>
+                  Delivery address
+                  <textarea
+                    name="address"
+                    rows="4"
+                    placeholder="Town, landmark, and any detail needed to reach the customer."
+                    required
+                  ></textarea>
+                </label>
+
+                <label>
+                  Order notes
+                  <textarea
+                    name="note"
+                    rows="4"
+                    placeholder="Size, color preference, or any delivery note."
+                  ></textarea>
+                </label>
+
+                <button class="button primary wide" type="submit">Place order</button>
+                <p class="form-status" id="order-status" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience-section">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Why This Works</p>
+            <h2>Modern selling features without overcomplicating the launch.</h2>
+          </div>
+
+          <div class="experience-grid">
+            <article class="experience-card" data-reveal>
+              <h3>Live inventory management</h3>
+              <p>New products can be added from the admin dashboard and appear instantly on the storefront.</p>
+            </article>
+            <article class="experience-card" data-reveal>
+              <h3>Order capture</h3>
+              <p>Each checkout stores the customer, selected items, total amount, and order reference.</p>
+            </article>
+            <article class="experience-card" data-reveal>
+              <h3>Payment follow-up</h3>
+              <p>Staff can track unpaid, awaiting confirmation, and paid orders in one place.</p>
+            </article>
+            <article class="experience-card" data-reveal>
+              <h3>Local boutique feel</h3>
+              <p>The site still keeps the shop story, location, and high-touch customer support front and center.</p>
+            </article>
+          </div>
+
+          <div class="story-layout">
+            <article class="story-card" data-reveal>
+              <p class="eyebrow">Boutique Story</p>
+              <h3>Rooted in Hiawa, tailored for men who want to look sharp.</h3>
+              <p>
+                Auntie Bee's Boutique is positioned as the place men can trust for a complete
+                shopping trip: clean casual wear, event-ready official looks, premium sneakers,
+                slippers, and the grooming products that finish the outfit.
+              </p>
+            </article>
+
+            <article class="location-card" id="location" data-reveal>
+              <p class="eyebrow">Visit the Shop</p>
+              <h3>Hiawa, off the Asankragua Road, Western Region, Ghana</h3>
+              <ul class="location-list">
+                <li>Ideal for in-store styling help and size guidance.</li>
+                <li>Supports walk-ins, repeat customers, and delivery enquiries.</li>
+                <li>Ready to grow into full ecommerce or WhatsApp-assisted ordering.</li>
+              </ul>
+              <div class="location-actions">
+                <a
+                  class="button secondary wide"
+                  href="https://www.google.com/maps/dir/?api=1&destination=Hiawa%20off%20the%20Asankragua%20Road%2C%20Western%20Region%2C%20Ghana"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Get Google Maps directions
+                </a>
+                <a class="button ghost wide" href="#contact">Ask about availability</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonial-section">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Customer Mood</p>
+            <h2>The kind of confidence the brand should communicate.</h2>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card" data-reveal>
+              <p>
+                "I want a place where I can order a clean office look and still ask about delivery before payment is confirmed."
+              </p>
+              <strong>Young professional</strong>
+            </article>
+            <article class="testimonial-card" data-reveal>
+              <p>
+                "If the site remembers my selected items and lets the shop confirm payment later, that's practical."
+              </p>
+              <strong>Busy shopper</strong>
+            </article>
+            <article class="testimonial-card" data-reveal>
+              <p>
+                "A boutique like this should feel premium online but still work for real stock and order follow-up."
+              </p>
+              <strong>Style-conscious customer</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">FAQ</p>
+            <h2>Helpful answers customers usually need before buying.</h2>
+          </div>
+          <div class="faq-list" data-reveal>
+            <details>
+              <summary>Can customers place orders directly on the website now?</summary>
+              <p>Yes. They can add products to bag, submit delivery details, and choose a payment method during checkout.</p>
+            </details>
+            <details>
+              <summary>How is payment monitored?</summary>
+              <p>Paystack payments can verify automatically, while manual mobile money and bank transfer can still be confirmed from the admin dashboard.</p>
+            </details>
+            <details>
+              <summary>How are new products added?</summary>
+              <p>Staff can use the admin dashboard to create new items with price, stock, description, and category.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-layout">
+          <div class="contact-copy" data-reveal>
+            <p class="eyebrow">Contact the Boutique</p>
+            <h2>Keep fast enquiries for customers who are not ready to order yet.</h2>
+            <p>
+              The boutique can still receive size checks, price questions, and special requests
+              through a direct contact form. Selected cart items can also be copied into this enquiry.
+            </p>
+            <div class="contact-points">
+              <article>
+                <strong>Ask about</strong>
+                <span>Sizes, prices, delivery, new arrivals, and special orders.</span>
+              </article>
+              <article>
+                <strong>Best for</strong>
+                <span>Instagram clicks, WhatsApp referrals, and repeat customers.</span>
+              </article>
+              <article>
+                <strong>Location</strong>
+                <span>Hiawa, off the Asankragua Road, Western Region, Ghana.</span>
+              </article>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate data-reveal>
+            <div class="field-row">
+              <label>
+                Full name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Phone number
+                <input type="tel" name="phone" placeholder="+233..." />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                Email address
+                <input type="email" name="email" placeholder="you@gmail.com" />
+              </label>
+              <label>
+                Shopping interest
+                <select name="interest">
+                  <option value="">Select a category</option>
+                  <option value="Casual wear">Casual wear</option>
+                  <option value="Official clothing">Official clothing</option>
+                  <option value="Sneakers and footwear">Sneakers and footwear</option>
+                  <option value="Grooming essentials">Grooming essentials</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Tell Auntie Bee's Boutique what you want to buy, your size, or the style you are looking for."
+                required
+              ></textarea>
+            </label>
+
+            <button class="button primary wide" type="submit">Send enquiry</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand brand-footer" href="#top">
+            <span class="brand-mark">AB</span>
+            <span class="brand-copy">
+              <strong>Auntie Bee's</strong>
+              <small>Boutique</small>
+            </span>
+          </a>
+          <p>
+            Premium menswear, sneakers, footwear, and grooming essentials for men in
+            Hiawa and beyond.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#collections">Collections</a>
+          <a href="#checkout">Checkout</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contact</a>
+          <a href="admin.html">Store Admin</a>
+        </div>
+        <p class="footer-note">
+          &copy; <span id="year"></span> Auntie Bee's Boutique.
+          <br />
+          Powered by Jesus Saves media, Emmanuel Boadu devs.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

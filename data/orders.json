@@ -1,0 +1,226 @@
+[
+  {
+    "id": "ORD-MN4OWD7P-KS8U",
+    "createdAt": "2026-03-24T14:08:09.445Z",
+    "updatedAt": "2026-03-24T14:08:50.201Z",
+    "customer": {
+      "name": "EMMANUEL BOADU",
+      "phone": "+233507373433",
+      "email": "emmanuelboadu250223@gmail.com",
+      "address": "51 Westgate, Bradford BD1 2RD,"
+    },
+    "items": [
+      {
+        "id": "PRD-FOOTWEAR-04",
+        "name": "Luxury Slide Slippers",
+        "category": "Footwear",
+        "price": 190,
+        "quantity": 1,
+        "lineTotal": 190
+      }
+    ],
+    "totals": {
+      "items": 1,
+      "subtotal": 190
+    },
+    "note": "",
+    "orderStatus": "New",
+    "inventoryReservation": "reserved",
+    "payment": {
+      "method": "Paystack - Mobile Money",
+      "provider": "paystack",
+      "status": "Paid",
+      "providerStatus": "success",
+      "reference": "PST-MN4OWD7Q-NAAU",
+      "accessCode": "yus3ampyhk3h1it",
+      "authorizationUrl": "https://checkout.paystack.com/yus3ampyhk3h1it",
+      "channelPreference": "mobile_money",
+      "currency": "GHS",
+      "updatedAt": "2026-03-24T14:08:50.201Z",
+      "gatewayResponse": "Approved",
+      "channel": "mobile_money",
+      "transactionId": "5966481472",
+      "verifiedAt": "2026-03-24T14:08:50.201Z",
+      "paidAt": "2026-03-24T14:08:42.000Z"
+    },
+    "notifications": {
+      "orderCreatedCustomerAt": "",
+      "orderCreatedAdminAt": "",
+      "paymentConfirmedCustomerAt": "",
+      "paymentConfirmedAdminAt": "",
+      "lastError": ""
+    }
+  },
+  {
+    "id": "ORD-MN4P15OI-UI6S",
+    "createdAt": "2026-03-24T14:11:52.962Z",
+    "updatedAt": "2026-03-24T14:12:08.942Z",
+    "customer": {
+      "name": "EMMANUEL BOADU",
+      "phone": "+233530906592",
+      "email": "emmanuelboadu250223@gmail.com",
+      "address": "51 Westgate, Bradford BD1 2RD,"
+    },
+    "items": [
+      {
+        "id": "PRD-OFFICIAL-01",
+        "name": "Executive Shirt Set",
+        "category": "Official",
+        "price": 320,
+        "quantity": 1,
+        "lineTotal": 320
+      }
+    ],
+    "totals": {
+      "items": 1,
+      "subtotal": 320
+    },
+    "note": "",
+    "orderStatus": "New",
+    "inventoryReservation": "reserved",
+    "payment": {
+      "method": "Paystack - Mobile Money",
+      "provider": "paystack",
+      "status": "Paid",
+      "providerStatus": "success",
+      "reference": "PST-MN4P15OI-R1N9",
+      "accessCode": "brjp43gupogcbnb",
+      "authorizationUrl": "https://checkout.paystack.com/brjp43gupogcbnb",
+      "channelPreference": "mobile_money",
+      "currency": "GHS",
+      "updatedAt": "2026-03-24T14:12:08.942Z",
+      "gatewayResponse": "Approved",
+      "channel": "mobile_money",
+      "transactionId": "5966488688",
+      "verifiedAt": "2026-03-24T14:12:08.942Z",
+      "paidAt": "2026-03-24T14:12:00.000Z"
+    },
+    "notifications": {
+      "orderCreatedCustomerAt": "",
+      "orderCreatedAdminAt": "",
+      "paymentConfirmedCustomerAt": "",
+      "paymentConfirmedAdminAt": "",
+      "lastError": ""
+    }
+  },
+  {
+    "id": "ORD-MN4P6NR8-OGGS",
+    "createdAt": "2026-03-24T14:16:09.668Z",
+    "updatedAt": "2026-03-24T14:16:25.220Z",
+    "customer": {
+      "name": "EMMANUEL BOADU",
+      "phone": "+233530906592",
+      "email": "emmanuelboadu250223@gmail.com",
+      "address": "51 Westgate, Bradford BD1 2RD,"
+    },
+    "items": [
+      {
+        "id": "PRD-GROOMING-01",
+        "name": "Gentleman Grooming Pack",
+        "category": "Grooming",
+        "price": 150,
+        "quantity": 1,
+        "lineTotal": 150
+      },
+      {
+        "id": "PRD-FOOTWEAR-04",
+        "name": "Luxury Slide Slippers",
+        "category": "Footwear",
+        "price": 190,
+        "quantity": 1,
+        "lineTotal": 190
+      }
+    ],
+    "totals": {
+      "items": 2,
+      "subtotal": 340
+    },
+    "note": "I want a soccer cleat",
+    "orderStatus": "New",
+    "inventoryReservation": "reserved",
+    "payment": {
+      "method": "Paystack - Mobile Money",
+      "provider": "paystack",
+      "status": "Paid",
+      "providerStatus": "success",
+      "reference": "PST-MN4P6NR8-J9P0",
+      "accessCode": "9cbpc7duae7qiv7",
+      "authorizationUrl": "https://checkout.paystack.com/9cbpc7duae7qiv7",
+      "channelPreference": "mobile_money",
+      "currency": "GHS",
+      "updatedAt": "2026-03-24T14:16:25.220Z",
+      "gatewayResponse": "Approved",
+      "channel": "mobile_money",
+      "transactionId": "5966497112",
+      "verifiedAt": "2026-03-24T14:16:25.220Z",
+      "paidAt": "2026-03-24T14:16:16.000Z"
+    },
+    "notifications": {
+      "orderCreatedCustomerAt": "",
+      "orderCreatedAdminAt": "",
+      "paymentConfirmedCustomerAt": "",
+      "paymentConfirmedAdminAt": "",
+      "lastError": ""
+    }
+  },
+  {
+    "id": "ORD-MN4PKOAA-S4UN",
+    "createdAt": "2026-03-24T14:27:03.538Z",
+    "updatedAt": "2026-03-24T14:27:18.679Z",
+    "customer": {
+      "name": "EMMANUEL BOADU",
+      "phone": "+233530906592",
+      "email": "emmanuelboadu250223@gmail.com",
+      "address": "51 Westgate, Bradford BD1 2RD,"
+    },
+    "items": [
+      {
+        "id": "PRD-FOOTWEAR-01",
+        "name": "Jordan Street Pair",
+        "category": "Footwear",
+        "price": 650,
+        "quantity": 1,
+        "lineTotal": 650
+      },
+      {
+        "id": "PRD-FOOTWEAR-02",
+        "name": "Versace Edge Runner",
+        "category": "Footwear",
+        "price": 720,
+        "quantity": 1,
+        "lineTotal": 720
+      }
+    ],
+    "totals": {
+      "items": 2,
+      "subtotal": 1370
+    },
+    "note": "",
+    "orderStatus": "New",
+    "inventoryReservation": "reserved",
+    "payment": {
+      "method": "Paystack - Mobile Money",
+      "provider": "paystack",
+      "status": "Paid",
+      "providerStatus": "success",
+      "reference": "PST-MN4PKOAA-AVBF",
+      "accessCode": "wfs48xw6oqpb6uj",
+      "authorizationUrl": "https://checkout.paystack.com/wfs48xw6oqpb6uj",
+      "channelPreference": "mobile_money",
+      "currency": "GHS",
+      "updatedAt": "2026-03-24T14:27:18.679Z",
+      "gatewayResponse": "Approved",
+      "channel": "mobile_money",
+      "transactionId": "5966518048",
+      "verifiedAt": "2026-03-24T14:27:18.679Z",
+      "paidAt": "2026-03-24T14:27:10.000Z"
+    },
+    "notifications": {
+      "orderCreatedCustomerAt": "",
+      "orderCreatedAdminAt": "",
+      "paymentConfirmedCustomerAt": "",
+      "paymentConfirmedAdminAt": "",
+      "lastError": ""
+    }
+  }
+]

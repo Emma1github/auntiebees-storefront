@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auntie Bee's Boutique | Store Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="admin-body">
+    <div class="page-backdrop" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Auntie Bee's Boutique storefront">
+          <span class="brand-mark">AB</span>
+          <span class="brand-copy">
+            <strong>Auntie Bee's</strong>
+            <small>Store Admin</small>
+          </span>
+        </a>
+        <div class="admin-access">
+          <span class="status-chip is-neutral" id="auth-badge">Portal locked</span>
+          <span class="status-chip is-warning" id="live-status-badge" hidden>Live sync offline</span>
+          <button class="button ghost" id="logout-button" type="button" hidden>Log out</button>
+        </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav">
+          <a href="#dashboard">Dashboard</a>
+          <a href="#inventory">Inventory</a>
+          <a href="#orders">Orders</a>
+          <a href="index.html" class="nav-cta">View Store</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="admin-main">
+      <section class="section admin-login-section" id="login-shell">
+        <div class="container admin-login-grid">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Admin Portal</p>
+            <h2>Secure login for inventory, purchases, and live sales tracking.</h2>
+            <p>
+              Sign in before accessing the boutique data. The protected dashboard manages
+              products, orders, payment follow-up, enquiries, and a live sales stream that
+              updates as new purchases come in.
+            </p>
+          </div>
+
+          <form class="admin-auth-card" id="login-form" novalidate data-reveal>
+            <p class="eyebrow">Sign In</p>
+            <h3>Enter admin credentials</h3>
+
+            <label>
+              Username
+              <input type="text" name="username" autocomplete="username" required />
+            </label>
+
+            <label>
+              Password
+              <input type="password" name="password" autocomplete="current-password" required />
+            </label>
+
+            <button class="button primary wide" type="submit">Log in</button>
+            <p class="form-status" id="login-status" role="status" aria-live="polite"></p>
+            <p class="auth-note">
+              This portal is used to manage stock, incoming purchases, and payment confirmation.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <div id="admin-app" class="is-hidden">
+        <section id="dashboard" class="section admin-hero">
+          <div class="container admin-hero-grid">
+            <div class="section-heading" data-reveal>
+              <p class="eyebrow">Admin Dashboard</p>
+              <h2>Manage inventory, purchases, and sales as they happen.</h2>
+              <p>
+                The admin portal now shows secured boutique operations: live revenue movement,
+                top-selling products, order handling, payment confirmation, and inventory control.
+              </p>
+            </div>
+
+            <article class="admin-panel" data-reveal>
+              <p class="eyebrow">Live Tracking</p>
+              <h3>Realtime sales status</h3>
+              <div class="live-meta">
+                <span class="status-chip is-neutral" id="stream-status-chip">Connecting...</span>
+                <span class="live-updated" id="last-sync-label">Waiting for first sync</span>
+              </div>
+              <div class="feed-list compact-feed" id="sales-feed"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section metrics-section">
+          <div class="container">
+            <div class="admin-metrics" id="admin-metrics" data-reveal></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container admin-columns">
+            <form class="admin-form admin-panel" id="product-form" novalidate data-reveal>
+              <p class="eyebrow">Add New Item</p>
+              <h3>Publish a product to the storefront.</h3>
+
+              <div class="field-row">
+                <label>
+                  Product name
+                  <input type="text" name="name" placeholder="Premium Oxford Shirt" required />
+                </label>
+                <label>
+                  Category
+                  <input type="text" name="category" placeholder="Official" required />
+                </label>
+              </div>
+
+              <div class="field-row">
+                <label>
+                  Price (GHS)
+                  <input type="number" name="price" min="0" step="0.01" placeholder="320" required />
+                </label>
+                <label>
+                  Stock quantity
+                  <input type="number" name="stock" min="0" step="1" placeholder="10" />
+                </label>
+              </div>
+
+              <div class="field-row">
+                <label>
+                  Badge
+                  <input type="text" name="badge" placeholder="New arrival" />
+                </label>
+                <label>
+                  Tag line
+                  <input type="text" name="tag" placeholder="Sharp everyday fit" />
+                </label>
+              </div>
+
+              <label>
+                Description
+                <textarea
+                  name="description"
+                  rows="4"
+                  placeholder="Short product description for the storefront."
+                  required
+                ></textarea>
+              </label>
+
+              <label>
+                Product image
+                <input
+                  type="text"
+                  name="image"
+                  placeholder="assets/products/example.jpg or https://..."
+                />
+              </label>
+
+              <div class="field-row">
+                <label>
+                  Card color start
+                  <input type="text" name="visualStart" placeholder="#f1dec6" />
+                </label>
+                <label>
+                  Card color end
+                  <input type="text" name="visualEnd" placeholder="#bd8d58" />
+                </label>
+              </div>
+
+              <button class="button primary wide" type="submit">Add product</button>
+              <p class="form-status" id="product-form-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="admin-panel" data-reveal>
+              <p class="eyebrow">Sales Intelligence</p>
+              <h3>Watch what is moving fastest.</h3>
+              <div class="feed-list" id="top-products-list"></div>
+
+              <p class="eyebrow section-spacer">Payment Monitoring</p>
+              <div class="mini-card-grid" id="payment-breakdown"></div>
+
+              <p class="eyebrow section-spacer">Order Progress</p>
+              <div class="mini-card-grid" id="order-breakdown"></div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="inventory" class="section">
+          <div class="container">
+            <div class="section-heading" data-reveal>
+              <p class="eyebrow">Inventory</p>
+              <h2>Current product list and stock position.</h2>
+            </div>
+            <div class="inventory-grid" id="inventory-list"></div>
+          </div>
+        </section>
+
+        <section id="orders" class="section">
+          <div class="container">
+            <div class="section-heading" data-reveal>
+              <p class="eyebrow">Purchases</p>
+              <h2>Review orders, Paystack references, and payment states.</h2>
+            </div>
+
+            <div class="admin-table-shell" data-reveal>
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Order</th>
+                    <th>Customer</th>
+                    <th>Items</th>
+                    <th>Total</th>
+                    <th>Payment</th>
+                    <th>Order status</th>
+                    <th>Payment status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="orders-body"></tbody>
+              </table>
+            </div>
+            <p class="form-status" id="orders-status" role="status" aria-live="polite"></p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container admin-columns">
+            <article class="admin-panel" data-reveal>
+              <p class="eyebrow">Recent Enquiries</p>
+              <h3>Keep an eye on non-checkout interest.</h3>
+              <div class="feed-list" id="inquiries-list"></div>
+            </article>
+
+            <article class="admin-panel" data-reveal>
+              <p class="eyebrow">Working Notes</p>
+              <h3>Recommended daily workflow.</h3>
+              <ul class="location-list">
+                <li>Add new arrivals from the product form whenever stock changes.</li>
+                <li>Review fresh orders and move them from Awaiting payment or New to Processing as they are handled.</li>
+                <li>Paystack payments can update automatically, while manual mobile money and bank transfer can still be confirmed here.</li>
+                <li>If an order is cancelled, mark it cancelled so stock is returned automatically.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand brand-footer" href="index.html">
+            <span class="brand-mark">AB</span>
+            <span class="brand-copy">
+              <strong>Auntie Bee's</strong>
+              <small>Store Admin</small>
+            </span>
+          </a>
+          <p>Protected operations dashboard for Auntie Bee's Boutique.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#dashboard">Dashboard</a>
+          <a href="#inventory">Inventory</a>
+          <a href="#orders">Orders</a>
+          <a href="index.html">Storefront</a>
+        </div>
+        <p class="footer-note">&copy; <span id="year"></span> Auntie Bee's Boutique.</p>
+      </div>
+    </footer>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
