@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "id": "PRD-FOOTWE-RQ93M5",
+    "name": "Nike Air Force 1 '07 EasyOn",
+    "category": "Footwear",
+    "badge": "New arrival",
+    "price": 450,
+    "stock": 14,
+    "tag": "Shoes",
+    "description": "Quicker than 1, 2, 3—the original hoops shoe lets you get going. This version of the AF-1 features Nike EasyOn technology for a hands-free experience.",
+    "image": "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/13721f24-2774-443e-a27d-998d2c6be068/AIR+FORCE+1+%2707+FLYEASE.png",
+    "visual": ["#ead7c2", "#8b6b4e"],
+    "createdAt": "2026-03-25T09:48:11.155Z",
+    "updatedAt": "2026-03-25T09:48:11.155Z"
+  },
+  {
+    "id": "PRD-FOOTWE-0U1N7T",
+    "name": "Air Force 1 Low",
+    "category": "Footwear",
+    "badge": "New arrival",
+    "price": 650,
+    "stock": 6,
+    "tag": "Stadium Green and Laser Orange",
+    "description": "Taking cues from heat maps, this AF-1 gets an all-over colour treatment that blends seamlessly across the upper and the midsole.",
+    "image": "https://static.nike.com/a/images/w_1280,q_auto,f_auto/421a0816-9572-487e-bcfc-25693db0d49f/air-force-1-low-heatmap.jpg",
+    "visual": ["#ead7c2", "#8b6b4e"],
+    "createdAt": "2026-03-25T09:51:17.227Z",
+    "updatedAt": "2026-03-25T09:51:17.227Z"
+  },
+  {
+    "id": "PRD-FOOTWE-686OKY",
+    "name": "Nike Mercurial Vapor 16 Elite",
+    "category": "Footwear",
+    "badge": "New arrival",
+    "price": 700,
+    "stock": 15,
+    "tag": "Custom Multi-Ground Football Boot",
+    "description": "Firm-Ground Low-Top Football Boot",
+    "image": "https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/50f3d174-a44f-40be-942d-5c6ace58d6c2/ZM+VAPOR+16+ELITE+FG.png",
+    "visual": ["#ead7c2", "#8b6b4e"],
+    "createdAt": "2026-03-25T09:53:35.736Z",
+    "updatedAt": "2026-03-25T09:53:35.736Z"
+  },
+  {
+    "id": "PRD-GROOMI-WN8JIE",
+    "name": "Ombré Leather All Over Body Spray",
+    "category": "Grooming",
+    "badge": "New arrival",
+    "price": 700,
+    "stock": 15,
+    "tag": "Complimentary Private Blend 4mL",
+    "description": "A floral leather fragrance in an invigorating body spray.",
+    "image": "https://www.tomfordbeauty.com/cdn/shop/files/tf_sku_T7AH01_2000x2000_0.png?v=1774338515&width=840",
+    "visual": ["#ead7c2", "#8b6b4e"],
+    "createdAt": "2026-03-25T10:01:33.535Z",
+    "updatedAt": "2026-03-25T10:01:33.535Z"
+  },
+  {
+    "id": "PRD-OFFICI-201LOL",
+    "name": "Armadillo Brown Double Breasted Suit",
+    "category": "Official",
+    "badge": "New arrival",
+    "price": 1500,
+    "stock": 3,
+    "tag": "Breasted Suit",
+    "description": "Armadillo Brown Double Breasted Suit",
+    "image": "https://frenchcrown.com/cdn/shop/files/ST2031-DB_4.jpg?v=1766725137&width=1000",
+    "visual": ["#ead7c2", "#8b6b4e"],
+    "createdAt": "2026-03-25T10:05:00.946Z",
+    "updatedAt": "2026-03-25T10:05:00.946Z"
+  },
+  {
+    "id": "PRD-CASUAL-KXK52E",
+    "name": "LONG SLEEVE TOWELLING POLO",
+    "category": "Casual",
+    "badge": "New arrival",
+    "price": 250,
+    "stock": 20,
+    "tag": "TOMFORD",
+    "description": "LONG SLEEVE TOWELLING POLO",
+    "image": "https://cdn.media.amplience.net/i/tom_ford/JPL008-JMC010S23_LB999_OS_A?w=960",
+    "visual": ["#ead7c2", "#8b6b4e"],
+    "createdAt": "2026-03-25T10:07:43.952Z",
+    "updatedAt": "2026-03-25T10:07:43.952Z"
+  }
+]
